@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>ADD BOOKS</title>
+    <style>
+        input{
+            padding: 10px;
+            width: 450px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+
+        }
+        label{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <ul>
+            <li class="icon"><i style="margin-left: 50px; color: seagreen;" class="fas fa-book"></i> &nbsp E BookStore</li>
+            <li class="title1"> <b>Welcome to Admin Pannel</b> </li>
+        </ul>
+       </div>
+       <div class="header-2">
+        <nav class="navbar">
+            <ul>
+           <li><a href="index.php">Home</a></li> 
+           <li><a href="Add_book.php">Add Book</a></li> 
+           <li><a href="#home">Stationery</a></li> 
+           <li><a href="#home">Create Post</a></li>
+           <li><a href="#">Order</a></li> 
+           <li class="lo"><a href="#">Logout</a></li> 
+           <li><a href="#">Change Password</a></li> 
+            
+        </ul>
+        </nav>
+    </div>
+    
+    <header style="width:330px;">
+        <h1 style="margin: 30px;">About me</h1>
+        <div class="about">
+            <img src="a.jpg" alt="">
+            <h3 class="name">Abrar Fahim</h3>
+            <p class="post">Admin</p>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a class="ab" href="index.php">Store</a></li>
+                <li><a class="ab" href="Add_book.php">Order</a></li>
+                <li><a class="ab" href="#home">Create post</a></li>
+                <li><a class="ab" href="#home">Delevary</a></li>
+                <li><a class="ab" href="#home">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <h2 style="text-align: center;margin-top: 20px;padding: 40px;">Post New Book</h2>
+    <div  class="post" style="margin-left: 50px;">
+        
+    <form action="Add_book.php" method="POST" enctype="multipart/form-data">
+            <label for="#">Product Id &nbsp; &nbsp;</label>
+            <input type="text"  name="Product_Id"> <br>
+            <label for="#">Book Name &nbsp; </label>
+            <input type="text"  name="book_Name"> <br>
+            <label for="#">Writer Name</label>
+            <input type="text"  name="Writer_Name"> <br>
+            <label for="#">Catagories &nbsp;&nbsp; </label>
+            <input type="text"  name="Catagories">
+            <br>
+            
+            <label>Select file to upload:</label>  
+            <input style="margin-top: px; margin-left: 50px;" type="file" name="pic"> <br> 
+            
+            <input class="aa" style="padding: 8px; font-size: 17px;margin-top: 0px; width: 10%;text-align: center;margin-left: 450px;background-color: seagreen;" type="submit" value="ADD" name="submit">
+        </form>
+    </div>
+    
+
+
+    
+</body>
+</html>
